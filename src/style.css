@@ -1,40 +1,44 @@
 h1 {
   text-align: center;
   color:white;
-  font-size: 70px; 
+  font-size: 50px; 
+  font-family: monospace;
   
 }
 h2 {
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
+    font-family: monospace;
 }
 h3 {
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
+    font-family: monospace;
 }
 button {
     background-color: teal;
     padding: 10px;
     color: white;
     font-size: 20px;
+    font-family: monospace;
+
 }
 body {
     
     background-position: inherit;
     background-repeat: no-repeat;
     background-size:cover;  
-    background-image: url(img/fondo_cipher2.jpg);
+    background-image: url(img/fondo_hacker.jpeg);
     
 }
 #content {
-    border: 5px solid white;
+    border: 5px none white;
     margin: 4em 8em;
-    padding: 4em 8em;
+    padding: 2em 8em 4em;
     background-color: black;
-    opacity: .5;
-
+    opacity: .8;
 }
     
 
