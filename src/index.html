@@ -7,21 +7,26 @@
   </head>
   <body>
     <section id="page1">
-    <div id="content" style= "text-align:center">
+    <div id="container">
       <h1>Dialecto Oculto</h1>
-      <img src="img/codigosimpsons_cipher.gif" width="250px" height="150px">
-    <main>
+      <figure>
+        <img src="img/codigosimpsons_cipher.gif" width="270px" height="170px">
+      </figure>
+  
+      <main>
       <h2>Comunícate en secreto con tus contactos</h2>
       <h3>¡Crea tu propio código!</h3>
-      
-      <div id="showpage2">
-        <button>Comenzar aquí</button> 
+
+      <div class="buttons">
+        <div id="showpage2" class= "btnA">
+           <button type="button">Comenzar aquí</button> 
+        </div>
+        <div id="showinstructions" class= "btnB"> 
+           <button type="button">Instrucciones</button>
+        </div>
       </div>
-      <div id="showinstructions" > 
-        <button>Instrucciones</button>
-      </div>
       
-    </main>
+      </main>
     </div>
     </section>
 
@@ -29,8 +34,8 @@
     
     
     </section>
-<section style="display:none;" id="instructions">
-</section>
+    <section style="display:none;" id="instructions">
+    </section>
     
     <script src="index.js" type="module"></script>
   </body>
