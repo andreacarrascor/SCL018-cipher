@@ -31,6 +31,19 @@
     </section>
 
     <section style="display:none;" id="page2"> 
+      <main>
+          <h1>Crea o descifra tu código</h1>
+          <form id="cipher" autocomplete="off">
+              <input id="initial-input" spellcheck="false" placeholder="Escribe tu mensaje aquí" type="text" name="text">
+          </form>
+          <div id="result">
+              <input id="final-output" spellcheck="false" placeholder="Aquí aparecerá tu resultado" type="text" name="text">
+          </div>
+          <div class="rank">
+              <input id="rank" type="number" value="1" min="1" max="10" oninput="this.nextElementSibling.value= this.value">
+             
+          </div>
+      </main>
     
     
     </section>

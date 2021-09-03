@@ -1,6 +1,7 @@
 import cipher from './cipher.js';
 
 console.log(cipher);
+
 //declaramos las variables para obtener los elementos de paginas 1, 2 y 3
 const displayOne=
     document.getElementById("page1");

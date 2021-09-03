@@ -1,10 +1,61 @@
-h1 {
-  text-align: center;
-  color:white;
-  font-size: 50px; 
-  font-family: monospace;
-  
+:root {
+    --terminal-color:#292b36; 
+    --round-border: 4px; 
 }
+
+* {
+    font-family: monospace;
+}
+
+input, button {
+    border:none;
+    outline: none;
+}
+
+main {
+    padding: 25px;
+    box-shadow: 8px 8px 35px 0px rgb(0, 0, 0/75%);
+    border-radius: var(--round-border);
+}
+
+h1 {
+    text-align: center;
+    color:white;
+    font-size: 50px; 
+    font-family: monospace;
+
+}
+
+#initial-input, #final-output {
+    background-color: var(--terminal-color);
+    width: -webkit-fill-available;
+
+}
+
+#initial-input {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: white;
+    border-radius: var(--round-border);
+}
+
+/*Resultado mensaje encriptado*/
+
+#final-output {
+    height: 20px;
+    color:#5af78d;
+    padding: 0px 10px 10px;
+    margin-top: 10px;
+    border-radius: var(--round-border);
+
+}
+
+#rank {
+    margin-top: 10px;
+   
+}
+
+
 
 figure {
     display: flex;
@@ -13,7 +64,6 @@ figure {
     margin-top: auto;
     margin-bottom: auto;
   
-    
 }
 
 h2 {
@@ -62,10 +112,12 @@ button {
 }
 
 body {
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-size:cover;  
-    background-image: url(img/fondo_hacker.jpeg);
+    height: 100vh;
+    background-color: #5c4b7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 #container {
