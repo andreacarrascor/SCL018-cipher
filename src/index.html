@@ -9,44 +9,32 @@
     <section id="page1">
     <div id="container">
       <h1>Dialecto Oculto</h1>
-      <figure>
-        <img src="img/codigosimpsons_cipher.gif" width="270px" height="170px">
-      </figure>
+        <figure>
+          <img src="img/codigosimpsons_cipher.gif" width="270px" height="170px">
+        </figure>
   
-      <main>
-      <h2>Comunícate en secreto con tus contactos</h2>
-      <h3>¡Crea tu propio código!</h3>
+       <main>
+        <h2>Comunícate en secreto con tus contactos</h2>
+        <h3>¡Crea tu propio código!</h3>
 
-      <div class="buttons">
-        <div id="showpage2" class= "btnA">
-           <button type="button">Comenzar aquí</button> 
-        </div>
-        <div id="showinstructions" class= "btnB"> 
+        <div class="btnPageOne">
+          <div id="showpage2" class= "btnA">
+            <form action="page2.html" method="get">
+             <button>Comenzar aquí</button> 
+            </form>
+          </div>
+        
+          <div id="showinstructions" class= "btnB"> 
            <button type="button">Instrucciones</button>
+          </div>
         </div>
-      </div>
       
-      </main>
-    </div>
+        </main>
+      </div>
     </section>
 
-    <section style="display:none;" id="page2"> 
-      <main>
-          <h1>Crea o descifra tu código</h1>
-          <form id="cipher" autocomplete="off">
-              <input id="initial-input" spellcheck="false" placeholder="Escribe tu mensaje aquí" type="text" name="text">
-          </form>
-          <div id="result">
-              <input id="final-output" spellcheck="false" placeholder="Aquí aparecerá tu resultado" type="text" name="text">
-          </div>
-          <div class="rank">
-              <input id="rank" type="number" value="1" min="1" max="10" oninput="this.nextElementSibling.value= this.value">
-             
-          </div>
-      </main>
     
-    
-    </section>
+
     <section style="display:none;" id="instructions">
     </section>
     

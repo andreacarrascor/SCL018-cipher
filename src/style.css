@@ -26,23 +26,25 @@ h1 {
 
 }
 
-#initial-input, #final-output {
+#inputText, #outputText {
     background-color: var(--terminal-color);
     width: -webkit-fill-available;
+    font-size: 15px;
 
 }
 
-#initial-input {
+#inputText {
     margin: 10px 0 0;
     padding: 10px;
+    height: 100px;
     color: white;
     border-radius: var(--round-border);
 }
 
 /*Resultado mensaje encriptado*/
 
-#final-output {
-    height: 20px;
+#outputText {
+    height: 100px;
     color:#5af78d;
     padding: 0px 10px 10px;
     margin-top: 10px;
@@ -52,10 +54,18 @@ h1 {
 
 #rank {
     margin-top: 10px;
-   
+    display: flex;
+    justify-content: center;
+
 }
-
-
+#position {
+    border-radius: var(--round-border);
+    background: var(--terminal-color);
+    color: white;
+    height: 30px;
+    width: 50px;
+    
+}
 
 figure {
     display: flex;
@@ -80,6 +90,10 @@ h3 {
     font-family: monospace;
 }
 
+p {
+    font-size: 15px;
+}
+
 button {
     background-color:rgb(221, 154, 76);
     padding: 12px;
@@ -90,9 +104,10 @@ button {
     font-weight: bolder;
 }
 
-.buttons {
+.btnPageOne {
     margin-left: 230px;
     margin-right: 230px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -112,6 +127,7 @@ button {
 }
 
 body {
+    margin: 0px;
     height: 100vh;
     background-color: #5c4b7a;
     display: flex;
@@ -124,9 +140,21 @@ body {
     border: 5px none white;
     margin: 4em 8em;
     padding: 2em 8em 4em;
-    background-color: black;
-    opacity: .8;
+    background-color:#5c4b7a;
+    opacity: .9;
 
 }
 
+#cipherBtn {
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 
+#page1 {
+    height: 100vh;
+    width:100vw;
+    background-image: url(img/fondo_hacker.jpeg);
+    
+}
