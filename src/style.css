@@ -32,12 +32,14 @@ h1 {
     margin: 10px 0 0;
     padding: 10px;
     height: 100px;
+    width: 500px;
     color: white;
     border-radius: var(--round-border);
 }
 
 #outputText {
     height: 100px;
+    width: 500px;
     color:#5af78d;
     padding: 10px;
     border-radius: var(--round-border);
@@ -175,4 +177,8 @@ body {
 }
 #allStep{
     padding: 0px;
+}
+
+textarea {
+    resize: none;
 }

@@ -9,23 +9,28 @@ const showPage2 = document.getElementById("showPage2");
     secondPage.style.display = "block";
 });
 
+
 //declaración variables para texto cifrado/descifrado
-const firstText = document.getElementById("inputText").value;
-const finalText = document.getElementById("outputText").value;
+const firstText = document.getElementById("inputText");
+const finalText = document.getElementById("outputText");
 //declaración de variable para desplazamiento
-const offset = document.getElementById("position").value;
+const offset = document.getElementById("position");
 
 const encodeButton = document.getElementById("encode");
-//const decodeButton = document.getElementById("decode")
+const decodeButton = document.getElementById("decode")
 
 //escuchador de botón "Cifrar"
 encodeButton.addEventListener("click", () => {   
-   firstText.value;
-   offset.value;
-    finalText.value = cipher.encode(offset, firstText);
+    const entrance = firstText.value;
+    const displacement = offset.value;
+    finalText.value = cipher.encode(displacement, entrance);
 });
-
-
+//escuchador de botón "Descifrar"
+decodeButton.addEventListener("click", () => {   
+    const entrance = firstText.value;
+    const displacement = offset.value;
+    finalText.value = cipher.decode(displacement, entrance);
+});
 
     
 

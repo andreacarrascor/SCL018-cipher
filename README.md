@@ -462,3 +462,38 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+
+
+<details>
+<summary>Readme Proyecto Cipher "Dialecto Brujo Oculto"</summary>
+
+[1. Introducción](#1-Introducción)
+[2. Usuario objetivo](#2-Usuario-objetivo)
+[3. Proceso y diseño](#3-Proceso-y-diseño)
+[4. Consideraciones generales](#4-consideraciones-generales)
+[5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+[6. Hacker edition](#6-hacker-edition)
+[7. Consideraciones técnicas](#7-consideraciones-técnicas)
+[8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+[9. Checklist](#9-checklist)
+
+## 1. Introducción
+
+El requisito principal del proyecto es crear una aplicación web que servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (offset), mediante el uso de la técnica del Cifrado César.
+A raíz de esto, comienza una búsqueda de contextos de la vida diaria en la que se pueda aplicar este método. Tomando como referencia la agenda chilena 'Pascualina', cuya protagonista es un personaje femenino que creó un abecedario especial (dialecto brujo) con símbolos que reemplazaban las letras del alfabeto, permitía a les usuarios de la agenda escribir su diario de vida en clave.
+
+## 2. Usuario objetivo
+
+La idea de nuestro producto es permitir que usuarios con alfabetización digital de todas las edades (niños de 12 a 99 años), y que quieran divertirse enviando mensajes secretos a sus contactos (whatsapp, telegram, instagram, etc.), puedan entrar a nuestra aplicación y encriptar sus textos, copiarlos y pegarlos en sus redes sociales favoritas.
+Objetivo usuario: 
+Enviar mensajería encriptada/secreta a sus contactos en redes sociales.
+
+¿Cómo el producto resuelve las necesidades de los usuarios?
+Nuestra aplicación web permite que el usuario envíe mensajes encriptados a sus contactos evitando que otras personas accedan a esa información, mediante un método de cifrado.
+
+## 3. Proceso y diseño
+
+![](src/img/Prototipo-baja-fidelidad.jpeg)
+
+El prototipo de la aplicación 
+

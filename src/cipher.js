@@ -1,23 +1,52 @@
 const cipher = {
   
-  encode:  (offset, firstText) => {
-    //offset = parseInt(offset); no es necesario, porque el input de nuestro offset ya lleva type=number
-    firstText = firstText.toUpperCase();
+  encode:  (displacement, entrance) => {
+
+    if (displacement === null || displacement === 0 ) {
+      throw new TypeError();
+    }
+  
+    displacement = parseInt(displacement);
+    entrance = entrance.toUpperCase();
     let resultEncode = "";
     
-    for (let i = 0; i < firstText.length; i++) {
+    for (let i = 0; i < entrance.length; i++) {
       //Para transformar input en código ASCII//
-        let asciiCode = firstText.charCodeAt(i)
+        let asciiCode = entrance.charCodeAt(i)
     
         if(asciiCode >= 65 && asciiCode <= 90) {
-        let newPositionNumber = (asciiCode - 65 + offset) % 26 + 65;
+        let newPositionNumber = (asciiCode - 65 + displacement) % 26 + 65;
         resultEncode += String.fromCharCode(newPositionNumber);
         } 
+        else if (asciiCode === 32){
+          resultEncode += " "; 
+        }
     } 
          return resultEncode;
-  } 
-};
+  }, 
   
+  decode: (displacement, entrance) => {
+    displacement = parseInt(displacement);
+    entrance = entrance.toUpperCase();
+    let resultDecode = "";
+    
+    for (let i = 0; i < entrance.length; i++) {
+      //Para transformar input en código ASCII//
+        let asciiCode = entrance.charCodeAt(i)
+    
+        if(asciiCode >= 65 && asciiCode <= 90) {
+        let newPositionNumber = (asciiCode - 90 - displacement) % 26 + 90;
+        resultDecode += String.fromCharCode(newPositionNumber);
+        } 
+        else if (asciiCode === 32){
+          resultDecode += " "; 
+        }
+    } 
+         return resultDecode;
+  }
+};
+
+export default cipher;
 
 
 
@@ -32,4 +61,4 @@ const cipher = {
 //fórmula cifrado César
 //(x-65 + n)% 26 + 65
 
-export default cipher;
+
