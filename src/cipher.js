@@ -1,30 +1,34 @@
-const cipher = () => {
-//const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-const offset = document.getElementById("position");
-const input = document.getElementById("inputText");
-// const output = document.getElementById("outputText");
-const encodeButton = document.getElementById("encode");
-const decodeButton = document.getElementById("decode");
-  let result = "";
-    for (let i=0; i < input.lenght; i++) {
-      if(input.charCodeAt(i)>= 65 && input.charCodeAt(i)<=90) {
-        result+=String.fromCharCode((input.charCodeAt(i) - 65 + offset) % 26 + 65);
-      } result+=String.fromCharCode(input.charCodeAt(i));
-
-      } document.getElementById("outputText").value = result;
-      
-      return result; 
-    } 
-
+const cipher = {
   
-     
+  encode:  (offset, firstText) => {
+    //offset = parseInt(offset); no es necesario, porque el input de nuestro offset ya lleva type=number
+    firstText = firstText.toUpperCase();
+    let resultEncode = "";
+    
+    for (let i = 0; i < firstText.length; i++) {
+      //Para transformar input en código ASCII//
+        let asciiCode = firstText.charCodeAt(i)
+    
+        if(asciiCode >= 65 && asciiCode <= 90) {
+        let newPositionNumber = (asciiCode - 65 + offset) % 26 + 65;
+        resultEncode += String.fromCharCode(newPositionNumber);
+        } 
+    } 
+         return resultEncode;
+  } 
+};
+  
 
+
+
+ //document.getElementById("outputText").value = result;
+ //this.value = this.value.toUpperCase(); //Para cambiar automáticamente el input a mayúscula 
 
 
 //llamamos a la variable para obtener codigo ASCII de la letra seleccionada
 //alphabet.charCodeAt();
 //para convertir de código ASCII a letra 
-//Alphabet.fromCharCode();
+//String.fromCharCode();
 //fórmula cifrado César
 //(x-65 + n)% 26 + 65
 

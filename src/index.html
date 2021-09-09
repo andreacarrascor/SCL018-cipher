@@ -8,20 +8,19 @@
   <body>
     <section id="page1">
     <div id="container">
-      <h1>Dialecto Oculto</h1>
+      <h1>Dialecto Brujo Oculto</h1>
         <figure>
-          <img src="img/codigosimpsons_cipher.gif" width="270px" height="170px">
+          <img src="img/Bruja magia.gif" width="270px" height="170px">
         </figure>
   
        <main>
         <h2>Comunícate en secreto con tus contactos</h2>
-        <h3>¡Crea tu propio código!</h3>
+        <p>Dale magia a tus mensajes y transfórmalos en un dialecto en clave solo para ti y tus amigos</p>
+        <h3>¡Crea tu propio código mágico!</h3>
 
         <div class="btnPageOne">
-          <div id="showpage2" class= "btnA">
-            <form action="page2.html" method="get">
+          <div id="showPage2" class= "btnA">
              <button>Comenzar aquí</button> 
-            </form>
           </div>
         
           <div id="showinstructions" class= "btnB"> 
@@ -33,10 +32,38 @@
       </div>
     </section>
 
-    
+    <section id="page2" style="display:none">  
+      <div id = "containerPage2">
+         <header>
+             <h1>Código mágico</h1>
+         </header>
+     <main id="allStep">
+         <h2>Paso 1: Escribe tu mensaje</h2>
+         <p>Por favor, utilice SOLO mayúsculas (sin la letra ñ)</p>
 
-    <section style="display:none;" id="instructions">
-    </section>
+         <div id="stepOne" autocomplete="off">
+             <input id="inputText" spellcheck="false" placeholder="Escribe tu mensaje aquí" type="text" name="text">
+         </div>
+
+         <h3>Paso 2: Escoge un número del 1 al 33 para crear tu código especial:</h3>
+
+         <div id="rank">
+           <input id="position" type="number" min="1" max="33">
+         </div>
+
+         <div id="cipherBtn">
+         <button type="button" id="encode">Cifrar</button>
+         <button type="button" id="decode">Descifrar</button>
+         </div>
+     
+         <div id="result">
+             <input id="outputText" spellcheck="false" placeholder="Aquí aparecerá tu resultado" type="text" name="text">
+         </div>
+
+     </div>
+     </main>
+
+   </section>
     
     <script src="index.js" type="module"></script>
   </body>
