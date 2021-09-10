@@ -32,15 +32,15 @@
          <header>
              <h1>Código mágico</h1>
          </header>
-     <main id="allStep">
-         <h4>Paso 1: Escribe tu mensaje</h4>
-         <p>Por favor, utilice SOLO mayúsculas (sin la letra ñ)</p>
+     <main>
+         <h4>Paso 1: Puedes escribir un mensaje nuevo o pegar el mensaje mágico y así poder descubrir su significado</h4>
+         <p>Si escribes un mensaje nuevo, por favor, utiliza SOLO mayúsculas (sin la letra ñ)</p>
 
          <div id="stepOne" autocomplete="off">
-             <textarea id="inputText" rows= "4" cols= "50" maxlength= "300" spellcheck="false" placeholder="Escribe tu mensaje aquí"  type="text" name="text"></textarea>
+             <textarea id="inputText" rows= "4" cols= "50" maxlength= "300" spellcheck="false" placeholder="Escribe (o pega) tu mensaje aquí"  type="text" name="text"></textarea>
          </div>
          
-         <h5>Paso 2: Escoge un número del 1 al 33 para crear tu código especial:</h5>
+         <h5>Paso 2: Ahora, tienes que escoger un número (del 1 al 33) para crear tu código especial</h5>
 
          <div id="rank">
            <input id="position" type="number" value="1" min="1" max="33">
@@ -54,13 +54,20 @@
          <div id="result">
              <textarea id="outputText" spellcheck="false" placeholder="Aquí aparecerá tu resultado" readonly type="text" name="text"></textarea>
          </div>
+         <h6>Paso 3: ¡Felicidades 🎉! Ya tienes tu mensaje 🧙, ¡Ahora puedes compartirlo con tus amigos 😎!</h6>
+         <p>Para compartir solo tienes que hacer click en una de las imágenes</p>
+         <div class="socialNetwork">
+             <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.png"></a>
+             <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png"></a>
+             <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
+             <a href="https://web.telegram.org" target="_blank"><img src="img/telegram.png"></a>
+          </div>
+         <div id="showPage1" class= "btnI"> 
+           <button type="button">Volver al Inicio</button>
+         </div>
       </main>
      </div>
      
-     <div id="showPage1" class= "btnI"> 
-      <button type="button">Volver al Inicio</button>
-     </div>
-
    </section>
     
     <script src="index.js" type="module"></script>

@@ -7,7 +7,7 @@ const cipher = {
     }
   
     displacement = parseInt(displacement);
-    entrance = entrance.toUpperCase();
+    // entrance = entrance.toUpperCase();
     let resultEncode = "";
     
     for (let i = 0; i < entrance.length; i++) {
@@ -18,16 +18,27 @@ const cipher = {
         let newPositionNumber = (asciiCode - 65 + displacement) % 26 + 65;
         resultEncode += String.fromCharCode(newPositionNumber);
         } 
-        else if (asciiCode === 32){
-          resultEncode += " "; 
+        else if (asciiCode >= 97 && asciiCode <= 122) {
+          let minLetter = (asciiCode - 97 + displacement) % 26 + 97;
+          resultEncode += String.fromCharCode(minLetter);
+      }
+        else {
+          resultEncode += entrance[i]
         }
+
+
     } 
          return resultEncode;
   }, 
   
   decode: (displacement, entrance) => {
+
+    if (displacement === null || displacement === 0 ) {
+      throw new TypeError();
+    }
+    
     displacement = parseInt(displacement);
-    entrance = entrance.toUpperCase();
+    // entrance = entrance.toUpperCase();
     let resultDecode = "";
     
     for (let i = 0; i < entrance.length; i++) {
@@ -38,8 +49,12 @@ const cipher = {
         let newPositionNumber = (asciiCode - 90 - displacement) % 26 + 90;
         resultDecode += String.fromCharCode(newPositionNumber);
         } 
-        else if (asciiCode === 32){
-          resultDecode += " "; 
+        else if (asciiCode >= 97 && asciiCode <= 122) {
+          let minLetter = (asciiCode - 122 - displacement) % 26 + 122;
+          resultDecode += String.fromCharCode(minLetter);
+      }
+        else {
+          resultDecode += entrance[i]
         }
     } 
          return resultDecode;
