@@ -495,5 +495,13 @@ Nuestra aplicación web permite que el usuario envíe mensajes encriptados a sus
 
 ![](src/img/Prototipo-baja-fidelidad.jpeg)
 
-El prototipo de la aplicación 
+El diseño fue desarrollado para el uso de forma muy intuitiva, de fácil entender y de diseño atractivo para los usiarios. Los colores y las imágenes son característicos de la agenda con la cual nos inspiramos. 
 
+## 4. Experiencia de usuario
+
+En la imagen se muestra la página de inicio, donde en la columna lateral derecha se indican las instrucciones de uso para el cliente y en la columna lateral izquierda invita al usuario a comenzar con la experiencia de cifrar/decifrar su código.
+Al hacer click en el botón "comenzar aquí" se abre la ventana nro. 2 de la página web.
+
+En esta imagen se aprecian 2 cuadros de textos, donde en el primero se debe ingresar el texto a cifrar/decifrar. una vez ingresado el trexto con mayúscula y sin símbolos en el cuadro, se debe elegir el número con el cual se desplazarán las letras para crifrar/decifrar con un rango de 1 a 33 posiciones para desplazar, para luego hacer click en uno de los dos botoenes que se visualian "Cifrar" o "Decifrar" según lo que el usuario desee hacer.
+
+Como se puede visualizar en la tercera imagen, en el cuadro de texto 2 se encuentra el resultado de Cifrado/Decifrado que realizó el uauario, con esta información podrá copiar el mensaje e ir en la parte inferior de la página y hacer click en la imagen de la red social por el cual desee enviar el mensaje.
