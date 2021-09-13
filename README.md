@@ -483,7 +483,7 @@ Al hacer click en el botón "Comenzar aquí" se abre la ventana nro. 2 de la pá
 
 ![](src/img/Pagina-2.png)
 
-En esta imagen se aprecia la página 2. Se presentan una serie de pasos a seguir, y junto con ello dos cuadros de textos. En el primero se debe ingresar el texto a cifrar/descifrar. Una vez ingresado el texto (en mayúsculas y sin símbolos, como se indica) se debe elegir el número con el cual se desplazarán las letras (rango de 1 a 33 posiciones), para luego hacer click en uno de los dos botones que se visualizan "Cifrar" o "Descifrar", según corresponda.
+En esta imagen se aprecia la página 2. Se presentan una serie de pasos a seguir, y junto con ello dos cuadros de textos. En el primero se debe ingresar el texto a cifrar/descifrar. Una vez ingresado el texto (sin símbolos, como se indica) se debe elegir el número con el cual se desplazarán las letras (rango de 1 a 33 posiciones), para luego hacer click en uno de los dos botones que se visualizan "Cifrar" o "Descifrar", según corresponda.
 
 Finalmente, el usuario recibe el resultado de su mensaje y, junto con ello, se le invita a compartirlo en su red social favorita haciendo click en uno de los logotipos que se observan a continuación del cuadro de texto, en el paso número 3.
 

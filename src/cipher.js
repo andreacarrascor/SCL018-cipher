@@ -1,29 +1,29 @@
 const cipher = {
   
-  encode:  (displacement, entrance) => {
+  encode:  (offset, firstText) => {
 
-    if (displacement === null || displacement === 0 ) {
+    if (offset === null || offset === 0 ) {
       throw new TypeError();
     }
   
-    displacement = parseInt(displacement);
-    // entrance = entrance.toUpperCase();
+    offset = parseInt(offset);
+    // firstText = firstText.toUpperCase();
     let resultEncode = "";
     
-    for (let i = 0; i < entrance.length; i++) {
+    for (let i = 0; i < firstText.length; i++) {
       //Para transformar input en código ASCII//
-        let asciiCode = entrance.charCodeAt(i)
+        let asciiCode = firstText.charCodeAt(i)
     
         if(asciiCode >= 65 && asciiCode <= 90) {
-        let newPositionNumber = (asciiCode - 65 + displacement) % 26 + 65;
+        let newPositionNumber = (asciiCode - 65 + offset) % 26 + 65;
         resultEncode += String.fromCharCode(newPositionNumber);
         } 
         else if (asciiCode >= 97 && asciiCode <= 122) {
-          let minLetter = (asciiCode - 97 + displacement) % 26 + 97;
+          let minLetter = (asciiCode - 97 + offset) % 26 + 97;
           resultEncode += String.fromCharCode(minLetter);
       }
         else {
-          resultEncode += entrance[i]
+          resultEncode += firstText[i]
         }
 
 
@@ -31,30 +31,30 @@ const cipher = {
          return resultEncode;
   }, 
   
-  decode: (displacement, entrance) => {
+  decode: (offset, firstText) => {
 
-    if (displacement === null || displacement === 0 ) {
+    if (offset === null || offset === 0 ) {
       throw new TypeError();
     }
     
-    displacement = parseInt(displacement);
-    // entrance = entrance.toUpperCase();
+    offset = parseInt(offset);
+    // firstText = firstText.toUpperCase();
     let resultDecode = "";
     
-    for (let i = 0; i < entrance.length; i++) {
+    for (let i = 0; i < firstText.length; i++) {
       //Para transformar input en código ASCII//
-        let asciiCode = entrance.charCodeAt(i)
+        let asciiCode = firstText.charCodeAt(i)
     
         if(asciiCode >= 65 && asciiCode <= 90) {
-        let newPositionNumber = (asciiCode - 90 - displacement) % 26 + 90;
+        let newPositionNumber = (asciiCode - 90 - offset) % 26 + 90;
         resultDecode += String.fromCharCode(newPositionNumber);
         } 
         else if (asciiCode >= 97 && asciiCode <= 122) {
-          let minLetter = (asciiCode - 122 - displacement) % 26 + 122;
+          let minLetter = (asciiCode - 122 - offset) % 26 + 122;
           resultDecode += String.fromCharCode(minLetter);
       }
         else {
-          resultDecode += entrance[i]
+          resultDecode += firstText[i]
         }
     } 
          return resultDecode;
@@ -65,8 +65,6 @@ export default cipher;
 
 
 
- //document.getElementById("outputText").value = result;
- //this.value = this.value.toUpperCase(); //Para cambiar automáticamente el input a mayúscula 
 
 
 //llamamos a la variable para obtener codigo ASCII de la letra seleccionada

@@ -17,7 +17,6 @@ h1 {
     color:white;
     font-size: 50px; 
     font-family: monospace;
-
 }
 
 #inputText, #outputText {
@@ -30,14 +29,14 @@ h1 {
 #inputText {
     margin: 10px 0 0;
     padding: 10px;
-    height: 100px;
+    height: 150px;
     width: 500px;
     color: white;
     border-radius: var(--round-border);
 }
 
 #outputText {
-    height: 100px;
+    height: 150px;
     width: 500px;
     color:#5af78d;
     margin: 10px 0 0;
@@ -78,7 +77,11 @@ figure {
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
-  
+    
+}
+
+article {
+    padding: 50px 50px 50px 0px;
 }
 
 h2 {
@@ -88,14 +91,7 @@ h2 {
     font-family: monospace;
 }
 
-h3 {
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-family: monospace;
-}
-
-h4, h5, h6 {
+h3, h4, h5 {
     text-align: left;
     color: white;
     font-size: 25px;
@@ -159,8 +155,8 @@ body {
 
 #container {
     border-radius: 20px;
-    margin: 2em 8em;
-    padding: 2em 8em 4em;
+    margin: 2em 5em 5em;
+    padding: 2em 8em 2em;
     background-color: rgb(92, 75, 122, .8);
 }
 
@@ -180,6 +176,7 @@ body {
 }
 
 #page1 {
+    height: 100vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
