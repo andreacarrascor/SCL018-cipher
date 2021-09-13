@@ -28,7 +28,7 @@ const cipher = {
 
 
     } 
-         return resultEncode;
+        return resultEncode;
   }, 
   
   decode: (offset, firstText) => {
@@ -57,21 +57,8 @@ const cipher = {
           resultDecode += firstText[i]
         }
     } 
-         return resultDecode;
+        return resultDecode;
   }
 };
 
 export default cipher;
-
-
-
-
-
-//llamamos a la variable para obtener codigo ASCII de la letra seleccionada
-//alphabet.charCodeAt();
-//para convertir de código ASCII a letra 
-//String.fromCharCode();
-//fórmula cifrado César
-//(x-65 + n)% 26 + 65
-
-

@@ -17,6 +17,16 @@ showPage1.addEventListener("click", () => {
     secondPage.style.display = "none";
 });
 
+//declarar variable para limpiar caracteres
+const clearText= document.getElementById("clear");
+
+//escuchador de boton limpiar
+clearText.addEventListener("click", () => {
+    document.getElementById("inputText").value= "";
+    document.getElementById("outputText").value= "";
+    document.getElementById("position").value= 0;
+});
+
 // //declaración variables para texto cifrado/descifrado
 // const firstText = document.getElementById("inputText");
 const finalText = document.getElementById("outputText");
@@ -39,17 +49,4 @@ decodeButton.addEventListener("click", () => {
     finalText.value = cipher.decode(offset, firstText);
 });
 
-    
-
-
-
-
-
-
-
-
 import cipher from './cipher.js';
-
-
-
-    
