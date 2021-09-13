@@ -1,43 +1,198 @@
-h1 {
-  text-align: center;
-  color:white;
-  font-size: 50px; 
-  font-family: monospace;
-  
+:root {
+    --terminal-color:#292b36; 
+    --round-border: 4px; 
 }
+
+* {
+    font-family: monospace;
+}
+
+main {
+    padding: 25px;
+    border-radius: var(--round-border);
+}
+
+h1 {
+    text-align: center;
+    color:white;
+    font-size: 50px; 
+    font-family: monospace;
+}
+
+#inputText, #outputText {
+    background-color: var(--terminal-color);
+    width: 400px;
+    font-size: 15px;
+    
+}
+
+#inputText {
+    margin: 10px 0 0;
+    padding: 10px;
+    height: 150px;
+    width: 500px;
+    color: white;
+    border-radius: var(--round-border);
+}
+
+#outputText {
+    height: 150px;
+    width: 500px;
+    color:#5af78d;
+    margin: 10px 0 0;
+    padding: 10px;
+    border-radius: var(--round-border);
+
+}
+
+#stepOne {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    margin: 2em 0em;
+    display: flex;
+    justify-content: center;
+}
+
+#rank {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+#position {
+    border-radius: var(--round-border);
+    background: var(--terminal-color);
+    color: white;
+    height: 30px;
+    width: 50px;
+    
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+article {
+    padding: 50px 50px 50px 0px;
+}
+
 h2 {
     text-align: center;
     color: white;
     font-size: 30px;
     font-family: monospace;
 }
-h3 {
-    text-align: center;
+
+h3, h4, h5 {
+    text-align: left;
     color: white;
     font-size: 25px;
     font-family: monospace;
 }
-button {
-    background-color: teal;
-    padding: 10px;
-    color: white;
+
+p {
     font-size: 20px;
-    font-family: monospace;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color:rgb(221, 154, 76);
+    padding: 12px;
+    border-radius: 12px;
+    color: black;
+    font-size: 20px;
+    font-family:monospace;
+    font-weight: bolder;
+}
+
+.btnPageOne {
+    margin-left: 230px;
+    margin-right: 230px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.btnA {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btnB {
+   display:flex;
+   justify-content: center;
 
 }
+
+.btnI{
+    margin-top: 70px;
+    display:flex;
+    justify-content: center;
+}
+
+
 body {
-    
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-size:cover;  
-    background-image: url(img/fondo_hacker.jpeg);
-    
-}
-#content {
-    border: 5px none white;
-    margin: 4em 8em;
-    padding: 2em 8em 4em;
-    background-color: black;
-    opacity: .8;
+    margin: 0px;
+    height: 100vh;
+    background-color:rgb(92, 75, 122, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
+#container {
+    border-radius: 20px;
+    margin: 2em 5em 5em;
+    padding: 2em 8em 2em;
+    background-color: rgb(92, 75, 122, .8);
+}
+
+#containerPage2 {
+    border-radius: 20px;
+    margin: 53em 7em 2em;
+    padding: 1em 8em 2em;
+    background-color: rgb(92, 75, 122, .8);
+    
+}
+
+#cipherBtn {
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/fondo_pascualina.jpg);
+}
+
+#page2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/fondo_pascualina.jpg);
+}
+
+textarea {
+    resize: none;
+}
+.socialNetwork {
+   display: flex;
+   justify-content: space-evenly;
+}

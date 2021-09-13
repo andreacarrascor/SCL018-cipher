@@ -1,29 +1,55 @@
+//declaración de variables para cambiar de página
+const firstPage = document.getElementById("page1");
+const secondPage = document.getElementById("page2");
+//variable botón "Comenzar aquí"
+const showPage2 = document.getElementById("showPage2");
+//variable botón "Inicio"
+const showPage1 = document.getElementById("showPage1")
+//escuchador de botón
+    showPage2.addEventListener("click", () => {
+    firstPage.style.display = "none";
+    secondPage.style.display = "block";
+});
+
+//escuchador de botón Inicio
+showPage1.addEventListener("click", () => {
+    firstPage.style.display = "block";
+    secondPage.style.display = "none";
+});
+
+// //declaración variables para texto cifrado/descifrado
+// const firstText = document.getElementById("inputText");
+const finalText = document.getElementById("outputText");
+// //declaración de variable para desplazamiento
+// const offset = document.getElementById("position");
+
+const encodeButton = document.getElementById("encode");
+const decodeButton = document.getElementById("decode")
+
+//escuchador de botón "Cifrar"
+encodeButton.addEventListener("click", () => {   
+    const firstText = document.getElementById("inputText").value;
+    const offset = document.getElementById("position").value;
+    finalText.value = cipher.encode(offset, firstText);
+});
+//escuchador de botón "Descifrar"
+decodeButton.addEventListener("click", () => {   
+    const firstText = document.getElementById("inputText").value;
+    const offset =  document.getElementById("position").value;
+    finalText.value = cipher.decode(offset, firstText);
+});
+
+    
+
+
+
+
+
+
+
+
 import cipher from './cipher.js';
 
-console.log(cipher);
-//declaramos las variables para obtener los elementos de paginas 1, 2 y 3
-const displayOne=
-    document.getElementById("page1");
 
-const displayTwo=
-    document.getElementById("page2");
 
-const displayThree=
-    document.getElementById("instructions");
-
-//declaramos una variable y función para mostrar la pagina 2, mediante un evento listener
-const showPage2=
-    document.getElementById("showpage2");
-    showPage2.addEventListener("click", () => {
-    displayOne.style.display= "none";
-    displayTwo.style.display= "block";
-
-})
-const showInstructions=
-    document.getElementById("showinstructions");
-    showInstructions.addEventListener("click", () => {
-    displayOne.style.display= "none";
-    displayTwo.style.display= "none";
-    displayThree.style.display= "block";
-})
     
