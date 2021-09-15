@@ -103,6 +103,7 @@ p {
     font-size: 20px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 button {
@@ -170,8 +171,4 @@ textarea {
 .socialNetwork {
 display: flex;
 justify-content: space-evenly;
-}
-
-p {
-    text-align: center;
 }

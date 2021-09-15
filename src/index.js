@@ -6,7 +6,7 @@ const showPage2 = document.getElementById("showPage2");
 //variable botón "Inicio"
 const showPage1 = document.getElementById("showPage1")
 //escuchador de botón
-    showPage2.addEventListener("click", () => {
+showPage2.addEventListener("click", () => {
     firstPage.style.display = "none";
     secondPage.style.display = "block";
 });
@@ -18,13 +18,13 @@ showPage1.addEventListener("click", () => {
 });
 
 //declarar variable para limpiar caracteres
-const clearText= document.getElementById("clear");
+const clearText = document.getElementById("clear");
 
 //escuchador de boton limpiar
 clearText.addEventListener("click", () => {
-    document.getElementById("inputText").value= "";
-    document.getElementById("outputText").value= "";
-    document.getElementById("position").value= 0;
+    document.getElementById("inputText").value = "";
+    document.getElementById("outputText").value = "";
+    document.getElementById("position").value = 0;
 });
 
 // //declaración variables para texto cifrado/descifrado
@@ -37,15 +37,15 @@ const encodeButton = document.getElementById("encode");
 const decodeButton = document.getElementById("decode")
 
 //escuchador de botón "Cifrar"
-encodeButton.addEventListener("click", () => {   
+encodeButton.addEventListener("click", () => {
     const firstText = document.getElementById("inputText").value;
     const offset = document.getElementById("position").value;
     finalText.value = cipher.encode(offset, firstText);
 });
 //escuchador de botón "Descifrar"
-decodeButton.addEventListener("click", () => {   
+decodeButton.addEventListener("click", () => {
     const firstText = document.getElementById("inputText").value;
-    const offset =  document.getElementById("position").value;
+    const offset = document.getElementById("position").value;
     finalText.value = cipher.decode(offset, firstText);
 });
 

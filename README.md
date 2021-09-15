@@ -481,11 +481,22 @@ El prototipo inicial fue realizado en formato de baja fidelidad y comprendía 3 
 En la imagen se muestra la página de inicio, invitando al usuario a comenzar con la experiencia de cifrar/descifrar su código.
 Al hacer click en el botón "Comenzar aquí" se abre la ventana nro. 2 de la página web.
 
-![](src/img/Pagina-2.png)
+![](src/img/Pantalla-2-paso-1.png)
 
-En esta imagen se aprecia la página 2. Se presentan una serie de pasos a seguir, y junto con ello dos cuadros de textos. En el primero se debe ingresar el texto a cifrar/descifrar. Una vez ingresado el texto (sin símbolos, como se indica) se debe elegir el número con el cual se desplazarán las letras (rango de 1 a 33 posiciones), para luego hacer click en uno de los dos botones que se visualizan "Cifrar" o "Descifrar", según corresponda.
+En esta imagen se aprecia la pantalla 2 en su primer paso (Separados con fines demostrativos). Aquí se debe ingresar el texto a cifrar/descifrar. 
 
-Finalmente, el usuario recibe el resultado de su mensaje y, junto con ello, se le invita a compartirlo en su red social favorita haciendo click en uno de los logotipos que se observan a continuación del cuadro de texto, en el paso número 3.
+![](src/img/Pantalla-2-paso-2.png)
+
+Una vez ingresado el texto, se debe elegir el número con el cual se desplazarán las letras (rango de 1 a 33 posiciones), para luego hacer click en uno de los dos botones que se visualizan "Cifrar" o "Descifrar", según corresponda. Como paso opcional si el usuario desea borrar todo su mensaje y comenzar otra vez, tiene la opción de hacer click en el botón "Limpiar".
+
+![](src/img/Pantalla-2-paso-3.png)
+
+Finalmente, el usuario recibe el resultado de su mensaje y, junto con ello, se le invita a compartirlo en su red social favorita, copiando el texto y haciendo click en uno de los logotipos que se observan a continuación del cuadro de texto, en el paso número 3.
+
+![](src/img/Pantalla-2.png)
+
+Aquí podemos observar el despliegue completo de la pantalla 2.
+
 
 ## 5. Link del proyecto 
 
