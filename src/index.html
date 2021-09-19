@@ -21,7 +21,7 @@
         <h2>Comunícate en secreto con tus contactos, dale magia a tus mensajes y transfórmalos en un dialecto en clave
           solo para ti y tus amigos ¡Crea tu propio código mágico!</h2>
       </article>
-      <div id="showPage2" class="btnA">
+      <div id="showPage2">
         <button type="button">Comenzar aquí</button>
       </div>
     </div>
@@ -30,7 +30,7 @@
   <section id="page2" style="display:none">
     <div id="containerPage2">
       <header>
-        <h1>Código mágico</h1>
+        <h1>Código Mágico</h1>
       </header>
       <main>
         <h3>Paso 1: Puedes escribir un mensaje nuevo o pegar el mensaje mágico y así poder descubrir su significado</h3>
@@ -38,23 +38,23 @@
           <textarea id="inputText" rows="4" cols="50" maxlength="300" spellcheck="false"
             placeholder="Escribe (o pega) tu mensaje aquí" type="text" name="text"></textarea>
         </div>
-        <h4>Paso 2: Ahora, tienes que escoger un número (del 1 al 33) para crear tu código especial. Una vez
+        <h3>Paso 2: Ahora, tienes que escoger un número (del 1 al 33) para crear tu código especial. Una vez
           seleccionado el número, haz click sobre uno de los botones dependiendo de si quieres cifrar o descifrar tu
-          mensaje. Para borrar todo y volver a comenzar, haz click sobre el botón "Limpiar"</h4>
+          mensaje. Para borrar todo y volver a comenzar, haz click sobre el botón "Limpiar"</h3>
         <div id="rank">
           <input id="position" type="number" value="0" min="1" max="33">
         </div>
-        <div id="cipherBtn">
+        <div id="cipher">
           <button type="button" id="encode">Cifrar</button>
           <button type="button" id="decode">Descifrar</button>
-          <button type="button" class="clearBtn" id="clear">Limpiar</button>
+          <button type="button" id="clear">Limpiar</button>
         </div>
         <div id="result">
           <textarea id="outputText" spellcheck="false" placeholder="Aquí aparecerá tu resultado" readonly type="text"
             name="text"></textarea>
         </div>
-        <h5>Paso 3: ¡Felicidades 🎉! Ya tienes tu mensaje 🧙, ¡Ahora solo tienes que copiarlo y compartirlo con tus
-          amigos 😎!</h5>
+        <h3>Paso 3: ¡Felicidades 🎉! Ya tienes tu mensaje 🧙, ¡Ahora solo tienes que copiarlo y compartirlo con tus
+          amigos 😎!</h3>
         <p>Para compartir solo tienes que hacer click en una de las imágenes</p>
         <div class="socialNetwork">
           <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.png"></a>
@@ -62,7 +62,7 @@
           <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
           <a href="https://web.telegram.org" target="_blank"><img src="img/telegram.png"></a>
         </div>
-        <div id="showPage1" class="btnI">
+        <div id="showPage1">
           <button type="button">Volver al Inicio</button>
         </div>
       </main>

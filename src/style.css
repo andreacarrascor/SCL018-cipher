@@ -2,7 +2,7 @@
     --terminal-color:#292b36; 
     --round-border: 4px; 
 }
-
+/* selector universal: aplicará a todos los elementos del documento */
 * {
     font-family: monospace;
 }
@@ -16,33 +16,24 @@ h1 {
     text-align: center;
     color:white;
     font-size: 50px; 
-    font-family: monospace;
 }
 
 #inputText, #outputText {
     background-color: var(--terminal-color);
-    width: 400px;
+    border-radius: var(--round-border);  
     font-size: 15px;
-    
+    margin: 15px;
+    padding: 10px;
+    height: 150px;
+    width: 500px;
 }
 
 #inputText {
-    margin: 10px 0 0;
-    padding: 10px;
-    height: 150px;
-    width: 500px;
     color: white;
-    border-radius: var(--round-border);
 }
 
 #outputText {
-    height: 150px;
-    width: 500px;
     color:#5af78d;
-    margin: 10px 0 0;
-    padding: 10px;
-    border-radius: var(--round-border);
-
 }
 
 #stepOne {
@@ -89,14 +80,12 @@ h2 {
     text-align: center;
     color: white;
     font-size: 30px;
-    font-family: monospace;
 }
 
-h3, h4, h5 {
+h3 {
     text-align: justify;
     color: white;
     font-size: 25px;
-    font-family: monospace;
 }
 
 p {
@@ -112,22 +101,26 @@ button {
     border-radius: 12px;
     color: black;
     font-size: 20px;
-    font-family:monospace;
     font-weight: bolder;
 }
 
-.btnA, .btnB, .clearBtn {
+#showPage2 {
     display: flex;
     justify-content: center;
     
 }
 
-.btnI{
+#showPage1{
     margin-top: 70px;
     display:flex;
     justify-content: center;
 }
 
+#cipher {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 body {
     margin: 0px;
@@ -149,14 +142,8 @@ body {
 #containerPage2 {
     border-radius: 20px;
     margin: 58em 7em 2em;
-    padding: 1em 8em 2em;
+    padding: 2em 8em 2em;
     background-color: rgb(92, 75, 122, .8);
-}
-
-#cipherBtn {
-    margin: 20px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 #page1, #page2 {
