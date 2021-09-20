@@ -7,7 +7,6 @@ const cipher = {
     }
 
     offset = parseInt(offset);
-    // firstText = firstText.toUpperCase();
     let resultEncode = "";
 
     for (let i = 0; i < firstText.length; i++) {
@@ -38,7 +37,6 @@ const cipher = {
     }
 
     offset = parseInt(offset);
-    // firstText = firstText.toUpperCase();
     let resultDecode = "";
 
     for (let i = 0; i < firstText.length; i++) {

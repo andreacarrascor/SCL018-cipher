@@ -1,3 +1,4 @@
+/*Declaramos variables dentro de la pseudo clase para poder aplicarlas globalmente al documento HTML */
 :root {
     --terminal-color:#292b36; 
     --round-border: 4px; 
