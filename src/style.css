@@ -36,18 +36,18 @@ h1 {
 #outputText {
     color:#5af78d;
 }
-
+/*contenedor para poder desplazar nuestro cuadro de texto input*/
 #stepOne {
     display: flex;
     justify-content: center;
 }
-
+/*contenedor para desplazar nuestro cuadro de texto final*/
 #result {
     margin: 2em 0em;
     display: flex;
     justify-content: center;
 }
-
+/*contenedor para nuestro offset*/
 #rank {
     margin-top: 10px;
     display: flex;
@@ -70,7 +70,6 @@ figure {
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
-    
 }
 
 article {
@@ -149,7 +148,7 @@ body {
 
 #page1, #page2 {
     background-position: center;
-    background-image: url(img/fondo_pascualina.jpg);
+    background-image: url(img/fondo_pascualina.png);
 }
 
 textarea {

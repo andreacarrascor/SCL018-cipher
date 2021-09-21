@@ -1,3 +1,5 @@
+import cipher from './cipher.js';
+
 //declaración de variables para cambiar de página
 const firstPage = document.getElementById("page1");
 const secondPage = document.getElementById("page2");
@@ -7,7 +9,9 @@ const showPage2 = document.getElementById("showPage2");
 const showPage1 = document.getElementById("showPage1")
 //escuchador de botón
 showPage2.addEventListener("click", () => {
+    /*ocultar página 1*/
     firstPage.style.display = "none";
+    /*mostrar página 2*/
     secondPage.style.display = "block";
 });
 
@@ -49,4 +53,3 @@ decodeButton.addEventListener("click", () => {
     finalText.value = cipher.decode(offset, firstText);
 });
 
-import cipher from './cipher.js';
